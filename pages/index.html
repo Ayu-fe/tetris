@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .root {
+            display: flex;
+            justify-content:  center;
+            margin: 0 auto;
+            border: 1px solid lightgray;
+            width: 630px;
+            height: 540px;
+        }
+        .game {
+            background-color: #000;
+            position: relative;
+            
+        }
+        .next {
+            position: relative;
+            margin-top: 10px;
+        }
+        .score-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .score{
+            color: #f40;
+            font-size: 2em;
+            font-family: bold;
+        }
+        .msg {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            position: absolute;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, .2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <div class="game">
+            <div class="msg">
+                    <p class="tip"> </p>
+            </div>
+        </div>
+        <div class="score-container">
+            <div class="next"></div>
+            <div class="score">
+                
+            </div>
+            <p>
+                ←：向左移动
+            </p>
+            <p>
+                →：向右移动
+            </p>
+            <p>
+                ↓：向下移动
+            </p>
+            <p>
+                space：旋转
+            </p>
+            <p>
+                enter: 暂停/开始
+            </p>
+            <p>
+                r：重新开始
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
