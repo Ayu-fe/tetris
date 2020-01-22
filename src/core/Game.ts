@@ -72,11 +72,18 @@ export class Game {
                 sq.viewer!.remove();
             })
             this._curShape = undefined;
+            
         }
         
+        this._duration = 1000;
+        if(this._timer) {
+            clearInterval(this._timer);
+            this._timer = null;
+        }
         this.nextShow();
         this._status = GameStatus.init;
         this._score = 0;
+        this._viewer.showScore(this._score);
         this.start();
     }
 
